@@ -1,0 +1,32 @@
+<html>
+<html lang="en,fr"></html>
+  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My Mini Website</title>
+      <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <title>SpinLight</title>
+  </head>
+  <body>
+    <h1>My First Alarm</h1>
+    <p>A few months ago, during my last semester, I challenged myself to build my own smart alarm clock using an ESP32.</p>
+    <p>The original goal was to create a device capable of playing music from a microSD card, displaying the weather, showing the time and date, and eventually supporting voice recognition. After writing most of the software, I accidentally burned my microSD adapter while soldering it, and the project came to a stop.</p>
+    <p>2 days ago, I realized that whenever I wake up to music instead of a standard alarm, my entire day feels different. That was enough motivation to revisit the project.</p>
+    <ol>This time, I challenged myself to build it using only the components I already had. I simplified the design and focused on the features that mattered most:
+    <li>An Internet radio that automatically starts playing at alarm time.</li>
+    <li>Time, date, and weather display.
+    <li>embedded web server that lets me configure the alarm directly from my phone.</li>
+    <li>I originally wanted to integrate Spotify, but the free version doesn't provide the access needed to stream directly to the ESP32, so I switched to an Internet radio stream instead.</li>
+    <li>Another challenge quickly appeared: I didn't have a case or access to a 3D printer. My solution? Build a custom enclosure using #LEGO bricks I found at home. It's far from the final design, but it works.</li></ol>
+    <h3><ul>The biggest lessons came from debugging:</h3>
+    <li>Fixing unstable I2C communication with the LCD.</li>
+    <li>Optimizing MicroPython so the web server stayed responsive while handling physical button inputs.</li>
+    <li>Solving RAM limitations during I2S audio streaming.</li>
+    <li>Finding direct MP3 streams instead of parsing HTML pages.</li></ul>
+    <p>This project has taught me a lot about embedded systems, low-level programming, hardware debugging, and even improved my soldering skills. I thought it would take me 1 day maximum, but It's still a work in progress, but every challenge solved brings me one step closer to the device I originally imagined.</p>
+    <p>I'm always happy to connect with other ESP32 and MicroPython enthusiasts and hear about the challenges you've encountered.</p>
+    <a href="https://www.example.com">
+  <img src="/workspaces/my-mini-site/site/pic.jpeg" 
+       alt="Description de l'image"></a>
+  </body>
+</html>
